@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,600&display=swap');
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  scroll-behavior: smooth;
+  border:none;
+  outline: none;
+  padding: 0;
+  
+}
+body{
+  background: var(--bg-color);
+}
+
+:root{
+  --bg-color:#1f242d;
+  --second-bg-color:#323946;
+  --text-color:#fff;
+  --main-color:#4dbae6ff;
+  --other-color: #000;
+}
+.section-head{
+  background:var(--second-bg-color);
+  width: 100%;
+  padding: 25px;
+}
+.section-head .header h3 span{
+  color: var(--text-color);
+}
+.section-head .header h3 {
+  color: var(--main-color);
+}
+.section-head .header img {
+  width: 8vw;
+  cursor: pointer;
+}
+.section-head .header{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.resume{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.container{
+  position: relative;
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  height: 1400px;
+  grid-template-columns: 1fr 2fr;
+}
+
+.container .left-side {
+  position: relative;
+  background: var(--second-bg-color);
+  height: 1300px;
+}
+.container .right-side {
+  position: relative;
+  background: var(--text-color);
+  height: 1300px;
+}
+.profiletext{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--main-color);
+  background: var(--second-bg-color);
+}
+.profiletext .imgbx{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+.profiletext .imgbx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.profiletext h4 {
+  color: var(--main-color);
+  font-size: .9rem;
+  font-weight: 300;
+}
+.profiletext h2 {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  background: var(--second-bg-color);
+}
+
+.contactinfo{
+text-align: left;
+display: inline-block;
+padding-left: 100px ;
+}
+.contactinfo h3, .education h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: var(--main-color);
+  letter-spacing: 1px;
+}
+.contactinfo ul li {
+  position: relative;
+ list-style: none;
+ padding: 5px 0;
+ color: var(--text-color);
+}
+.contactinfo ul li .icon{
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+.education {
+  text-align: left;
+  display: inline-block;
+ 
+}
+.education ul li {
+  list-style: none;
+  color: var(--text-color);
+  padding: 5px;
+}
+
+.education ul li h5{
+  font-weight: 500;
+  font-size: .7rem;
+  color: var(--main-color);
+}
+
+.education ul li h4 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.contactinfo.language{
+  width: 80%;
+}
+.language .percentage {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background: var(--other-color);
+  display: block;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+.contactinfo.language .percentage div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--main-color);
+  border-radius: 20px;
+}
+.right-side{
+  padding-left: 20px;
+}
+.summery {
+  margin-bottom: 50px;
+}
+.summery:last-child{
+  margin-bottom: 0;
+}
+
+.summery h2{
+  padding-top: 10px;
+  color: var(--main-color);
+}
+.experience .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.experience .box .year-company, .second-company  {
+  min-width: 250px;
+}
+.box .year-company, .second-company h5{
+  color: var(--second-bg-color);
+}
+.box .sub-title h5{
+  color: var(--main-color);
+  font-size: 1rem;
+  font-weight: 500;
+
+}
+.experience  h2{
+color: var(--main-color);
+}
+.skills{
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+.skills .skill{
+  padding-top: 10px;
+}
+.skills .skill {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.skills .skill h4 {
+ color: var(--second-bg-color); 
+ font-weight: 500;
+}
+
+.skills .skill .percent {
+  position: relative;
+  width: 80%;
+  height: 8px;
+  border-radius: 10px;
+  background: var(--second-bg-color);
+}
+.skills .skill .percent div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--main-color);
+}
+.s-skills h2{
+color: var(--main-color);
+text-transform: uppercase;
+padding-top: 20px;
+padding-bottom: 10px;
+}
+.hobies h2 {
+  padding-top:20px ;
+  padding-bottom:10px ;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+.hobbyBox{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.hobbyBox .hobby {
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.hobbyBox .hobby .bx {
+  color: var(--main-color);
+  font-size: 40px;
+  border: 2px solid var(--main-color);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.button {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.button a {
+text-decoration: none;
+color: var(--main-color);
+border: 1.5px solid var(--main-color);
+padding: 8px;
+cursor: pointer;
+transition: 2s;
+border-radius: 3px;
+}
+.button a:hover{
+  background-color: var(--main-color);
+  color: var(--text-color);
+  transition: .5s;
+  border-radius: 3px;
+}
+
+@media(max-width: 1000px) {
+  
+  .container{
+    margin: 10px;
+    grid-template-columns: repeat(1,1fr);
+    height: 1000px;
+  }
+  .hobies {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media(max-width: 600px){
+  .right-side {
+   margin-bottom: 5px; 
+   min-height: 2000px;
+  }
+  .left-side .box{
+ margin-bottom: 5px;
+  }
+  .skills {
+  grid-template-columns: 1,1fr;
+  }
+}
+/* Larger screens */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* Tablets and smaller screens */
+@media screen and (max-width: 991px) {
+  .container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .right-side {
+    padding-left: 0;
+  }
+  .left-side, .right-side {
+    width: 100%;
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .right-side {
+    min-height: 2600px;
+    padding-left: 10px;
+    padding-right: 5px;
+
+  }
+  .hobbyBox {
+    flex-direction: column;
+  }
+}
+
