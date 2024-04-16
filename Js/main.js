@@ -81,7 +81,7 @@ window.onscroll = () =>{
     // ====typed js=====
 
  var typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer', 'Backend Developer', 'Designer'],
+    strings: ['Web Developer', 'Data Analyst', 'Graphic Designer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 100,
@@ -167,6 +167,27 @@ new kursor ({
   removeDefaultCursor: false,
   color: "#fff"
 });
+
+// ==========READ MORE==========
+const parentContainer =document.getElementById('Readingmore');
+parentContainer.addEventListener ('click', event => {
+  const current = event.target;
+  const isReadMoreBtn = current.classname.includes('read-more-btn');
+  if (!isReadMoreBtn) return;
+  
+  const textContainer = current.target.parentNode.querySelector('.read-more');
+  textContainer.classList.toggle('read-more-text');
+
+          if (textContainer.classList.contains(".read-more--show")) {
+              button.textContent = "Read Less";
+          } else {
+              button.textContent = "Read More";
+          }
+      });
+
+
+
+
 
 // ==========CUSTOME THEME==========
 

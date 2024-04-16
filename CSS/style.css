@@ -126,7 +126,7 @@ padding: 10rem 9% 2rem;
 .home-img img{
 width: 35vw;
 border-radius: 15%;
-animation: floatImage 4s ease-in-out infinite;
+animation: floatImage 8s ease-in-out infinite;
 }
 
 
@@ -251,7 +251,15 @@ h2 span{
         padding-top: 20px;
         padding-bottom:30px; 
        
-      }   
+      }  
+      
+      .read-more, .read-more1, .read-more2 {
+        display: none;
+      }
+      .read-more.read-more--show {
+        display: inline; 
+        transition: .3s;
+    }
 
     
       .services .container {
@@ -309,6 +317,7 @@ h2 span{
       .services .container .col-1:hover a{
         color: var(--bg-color);
         font-weight: 800;
+        cursor: pointer;
       }
       .services .container .col-1:hover h3{
         color: var(--text-color);
