@@ -126,7 +126,7 @@ padding: 10rem 9% 2rem;
 .home-img img{
 width: 35vw;
 border-radius: 15%;
-animation: floatImage 8s ease-in-out infinite;
+animation: floatImage 9s ease-in-out infinite;
 }
 
 
@@ -639,11 +639,19 @@ animation-delay: -20s;
     }  
 
 /* ======Testimonials===== */
+.feedback{
+    background: var(--second-bg-color);
+    height: 100vh;
+
+}
+.feedback h2{
+    margin-top: 10px;
+
+}
 
 .feedback .testimonials{
     align-items: center;
     justify-content: center;
-    background: var(--bg-color);
 }
 
 
@@ -652,7 +660,7 @@ animation-delay: -20s;
    align-items: center;
    width: 100%;
    padding: 40px 0;
-   background:var(--bg-color);
+   background:var(--second-bg-colorbg-color);
 
 
 }
@@ -660,7 +668,7 @@ animation-delay: -20s;
     width: 320px;
     height: 400px;
     border-radius: 20px;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 .testimonials .card-content {
     margin: 0 20px;
@@ -720,7 +728,7 @@ padding: 10px 14px;
 }
 .testimonials .overlay::after {
 border-radius: 0 20px 0 0;
-background: var(--second-bg-color);
+background: var(--bg-color);
 }
 .testimonials .swiper-button-prev::after,
 .testimonials .swiper-button-next::after{
@@ -805,8 +813,7 @@ background: var(--second-bg-color);
 
 /* =====PROJECTS BUTTON===== */
 .projects-btn{
-    padding-top: 10px;
-    padding: 30px;
+    padding: 100px;
 }
 .projects-btn, a{
    align-items: center;
@@ -861,24 +868,24 @@ background: var(--second-bg-color);
     width: 100%;
 
 }
-.directCall .callContainer {
-    display: flex;
-}
+
 .directCall .callContainer .adress {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 200px;
+    /* justify-content: space-between; */
+    height: 150px;
     width:400px ;
-    padding: 10px;
+    padding: 40px;
+    row-gap: 20px;
+    gap: 15px;
     background: var(--second-bg-color);
-
+    margin-bottom: 5px;
 }
 .directCall .callContainer .adress .adressIcon{
-    font-size: 10em;
+    font-size: 7em;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 15px;
     align-items: center;
 }
 .directCall .callContainer .adress .adress-txt{
@@ -886,9 +893,9 @@ background: var(--second-bg-color);
 }
 .callContainer .adress .adressIcon i {
     background: var(--main-color);
-    width: 120px;
+    width: 90px;
     padding: 10px;
-    height: 120px;
+    height: 90px;
     border-radius: 50%;
 }
 .callContainer .adress .adress-txt h3{
