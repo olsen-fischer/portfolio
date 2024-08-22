@@ -36,12 +36,13 @@ window.onscroll = () =>{
        
         };
     });
-         /*==========emove toggle icon amd navbar when click nav bar when scrol==========*/
         menuIcons.classList.remove('bx-x');
         nav.classList.remove('active');
 
 
     };
+  
+  
     // =====submit btn=====
 
     let contbtn = document.querySelector(".contbtn");
@@ -169,21 +170,22 @@ new kursor ({
 });
 
 // ==========READ MORE==========
-const parentContainer =document.getElementById('Readingmore');
-parentContainer.addEventListener ('click', event => {
-  const current = event.target;
-  const isReadMoreBtn = current.classname.includes('read-more-btn');
-  if (!isReadMoreBtn) return;
-  
-  const textContainer = current.target.parentNode.querySelector('.read-more');
-  textContainer.classList.toggle('read-more-text');
+function toggleText(id) {
+  var content = document.getElementById(id);
+  var moreText = content.querySelector('.more-text');
+  var dots = content.querySelector('.dots');
+  var button = content.querySelector('button');
 
-          if (textContainer.classList.contains(".read-more--show")) {
-              button.textContent = "Read Less";
-          } else {
-              button.textContent = "Read More";
-          }
-      });
+  if (moreText.style.display === 'none') {
+      moreText.style.display = 'inline';
+      dots.style.display = 'none';
+      button.innerHTML = 'Read Less';
+  } else {
+      moreText.style.display = 'none';
+      dots.style.display = 'inline';
+      button.innerHTML = 'Read More';
+  }
+}
 
 
 
